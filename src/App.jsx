@@ -22,7 +22,9 @@ function App() {
     // setSearch('')
 }
     return (
-    <div>
+    <div style={{
+      "backgroundColor":"lightcoral"
+    }}>
       <Search data={data} handleClick={handleClick}/>
       <Card data={data}/>
     </div>

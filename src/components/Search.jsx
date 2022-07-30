@@ -12,7 +12,8 @@ function Search({data,handleClick}) {
         
             "justifyContent":"center",
             "alignContent":"center",
-            "marginTop":"20px"
+            "top":20,
+            "marginBottom":"20px"
     }}>
         <input type="text" placeholder='type of search' onChange={(e)=>setSearch(e.target.value)}/>
         <button onClick={()=>{handleClick(search);setSearch('')}}>Search</button>
