@@ -6,17 +6,15 @@ function Search({data,handleClick}) {
     
   return (
     <div style={{
-        // "margin":"auto",
-        "display":"flex",
-        // "flexDirection":"column",
         
+        "display":"flex",
             "justifyContent":"center",
             "alignContent":"center",
             "top":20,
             "marginBottom":"20px"
     }}>
         <input type="text" placeholder='type of search' onChange={(e)=>setSearch(e.target.value)}/>
-        <button onClick={()=>{handleClick(search);setSearch('')}}>Search</button>
+        <button onClick={()=>{handleClick(search);setSearch("")}}>Search</button>
     </div>
   )
 }

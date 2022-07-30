@@ -3,8 +3,9 @@ import React from 'react'
 function Card({data}) {
     console.log(data,"card page")
   return (
-    <div style={
-       { "display":"flex",
+    <>
+    {data.length>0?<div style={
+        { "display":"flex",
         "flexDirection":"column",
         "justifyContent":"center",
         "alignContent":"center",
@@ -27,7 +28,15 @@ function Card({data}) {
             <p>{post.body}</p>
         </div>
       )}
-    </div>
+    </div>: <div>
+        <h1 
+        style={{
+            "textAlign":"center"
+        }}>
+            no data found
+        </h1>
+    </div> }
+</>
   )
 }
 
